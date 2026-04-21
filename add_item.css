@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #84c4b3;
+    --secondary-color: hsl(195, 49%, 73%);
+    --black: black;
+    --white: #fff9d8;
+}
+
+body {
+    margin: 0;
+    font-family: calibri, sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--primary-color);
+    height: 50px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.top-nav {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 0;
+    height: 50px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav .container {
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.top-nav .right-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: auto;
+    max-width: 150px;
+}
+
+.login-btn {
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+    border-radius: 0.2rem;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 5px 28px;
+    background: transparent;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.item-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  /* تأكد من أن العناصر ستكون أعلى من بعضها */
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.image-preview-container {
+    flex: 0 0 200px;  /* تحديد عرض ثابت للـ image preview */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-details-right {
+    flex: 1;  /* يضمن أن الفورم يأخذ المساحة المتبقية */
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2 {
+    color: #333;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #84c4b3;
+    box-shadow: 0 0 5px rgba(132, 196, 179, 0.5);
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #84c4b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+
+form button:hover {
+    background-color: #5c9b89;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+form select option {
+    color: #333;
+    font-size: 14px;
+}
+
+#image-preview {
+    display: none;  /* إخفاء الصورة مبدئيًا */
+    width: 375px;   /* عرض الـ div */
+    height: 514px;  /* ارتفاع الـ div */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-preview img {
+    width: 100%;  /* ملء العرض الكامل للحاوية */
+    height: 100%; /* ملء الارتفاع الكامل للحاوية */
+    object-fit: cover;  /* تفعيل التغطية لضبط الصورة مع الحاوية */
+    border-radius: 5px; /* حواف دائرية للصورة */
+}

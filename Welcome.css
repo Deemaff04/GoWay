@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #84c4b3;
+  --secondary-color: hsl(195, 49%, 73%);
+  --black: black;
+  --white: #fff9d8;
+}
+
+body {
+  margin: 0;
+  font-family: calibri, sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+
+/* Login Section */
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--white);
+}
+
+.welcome-container {
+  background: var(--primary-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--primary-color);
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.redirecting {
+  font-size: 16px;
+  color: #007bff;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--primary-color);
+  height: 50px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.top-nav {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 0;
+  height: 50px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav .container {
+  display: flex;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.top-nav .right-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: auto;
+  max-width: 150px;
+}
+
+.login-btn {
+  font-size: 14px;
+  font-weight: bold;
+  width: 120px;
+  height: 35px;
+  border-radius: 0.2rem;
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 5px 28px;
+  background: transparent;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+}
+
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}

@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #84c4b3;
+  --secondary-color: hsl(195, 49%, 73%);
+  --black: black;
+  --white: #fff9d8;
+}
+
+body {
+  margin: 0;
+  font-family: calibri, sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+  padding-top: 100px;
+  padding-bottom: 80px;  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Header Styles */
+.header {
+  background-color: var(--primary-color);
+  height: 50px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.top-nav {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 0;
+  height: 50px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav .container {
+  display: flex;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.top-nav .right-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: auto;
+  max-width: 150px;
+}
+
+.login-btn {
+  font-size: 14px;
+  font-weight: bold;
+  width: 120px;
+  height: 35px;
+  border-radius: 0.2rem;
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 5px 28px;
+  background: transparent;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* تنسيق الحاوية */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.cards-container a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cards-container a.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-container a.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* تنسيق البطاقات */
+.card {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--primary-color);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card {
+cursor: pointer;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.card p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: var(--black);
+}
+
+.card strong {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px var(--black);
+  transition: all 0.3s ease;
+}

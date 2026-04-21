@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #84c4b3;
+    --secondary-color: hsl(195, 49%, 73%);
+    --black: black;
+    --white: #fff9d8;
+  }
+  
+  /* Body */
+  body {
+    margin: 0;
+    font-family: calibri, sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: var(--primary-color);
+    height: 50px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .top-nav {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 0;
+    height: 50px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-nav .container {
+    display: flex;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .top-nav .right-nav {
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    height: auto;
+    max-width: 150px;
+  }
+  
+  .login-btn {
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+    border-radius: 0.2rem;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 5px 28px;
+    background: transparent;
+  }
+  
+  .login-btn:hover {
+    cursor: pointer;
+  }
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.main-content {
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea specific styles */
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Submit Button Styling */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Back Button Styling */
+.back-btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-btn-container button {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn-container button:hover {
+  background-color: #888;
+}
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}

@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #84c4b3;
+    --secondary-color: hsl(195, 49%, 73%);
+    --black: black;
+    --white: #fff9d8;
+  }
+  
+  /* Body */
+  body {
+    margin: 0;
+    font-family: calibri, sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  
+  /* Main content styling */
+  .main-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Page title */
+  .page-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  /* Search Section */
+  .search-container {
+    margin-bottom: 30px;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .search-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #5c9b89;
+  }
+  
+  /* Table Section */
+  .table-container {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1140px; /* نفس العرض الذي يتم تطبيقه على الكونتينر الرئيسي */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  td {
+    border-top: 1px solid #ddd;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+/* Style for Edit Button */
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+/* Style for Delete Button */
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+}
+  /* Back Button Section */
+  .back-btn-container {
+    margin-top: 20px;
+  }
+  
+  .back-btn-container button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-btn-container button:hover {
+    background-color: #5c9b89;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: var(--primary-color);
+    height: 50px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .top-nav {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 0;
+    height: 50px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-nav .container {
+    display: flex;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .top-nav .right-nav {
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    height: auto;
+    max-width: 150px;
+  }
+  
+  .login-btn {
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+    border-radius: 0.2rem;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 5px 28px;
+    background: transparent;
+  }
+  
+  .login-btn:hover {
+    cursor: pointer;
+  }
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Style for the Add New Category button */
+.add-category-btn-container {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+/* Add New Category Button Style */
+.add-category-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.add-category-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styles for confirmation */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* مسافة بين الأزرار */
+}
+
+.confirm-btn, .cancel-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #e60000;
+}
+
+.cancel-btn:hover {
+  background-color: #45a049;
+}
